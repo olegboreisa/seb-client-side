@@ -1,0 +1,39 @@
+<div class="cont">
+  <div class="wrap">
+    <div id="log-form" [formGroup]="form">
+      <div class="form-group">
+        <label for="username">{{'login.username' | translate}}</label>
+        <input type="text"
+               class="form-control"
+               formControlName="username"
+               id="username">
+      </div>
+      <app-validation
+        [control]="form.get('username')">
+      </app-validation>
+      <div class="form-group">
+        <label for="password">{{'login.password' | translate}}</label>
+        <input type="password"
+               class="form-control"
+               formControlName="password"
+               id="password">
+      </div>
+      <app-validation
+        [control]="form.get('password')">
+      </app-validation>
+      <div id="sub-button">
+        <button type="button"
+                class="btn btn-primary"
+                (click)="login()"
+                [disabled]="!form.valid">
+          {{'login.submit' | translate}}
+        </button>
+        <button type="button"
+                class="btn btn-secondary"
+                (click)="back()">
+          {{'buttons.back' | translate}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

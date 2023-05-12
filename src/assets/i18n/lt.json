@@ -1,0 +1,85 @@
+{
+  "auth": {
+    "login": "Prisijungti",
+    "register": "Registruotis"
+  },
+
+  "register": {
+    "username": "Slapyvardis",
+    "password": "Slaptažodis",
+    "repeatPassword": "Pakartoti Slaptažodį",
+    "submit": "Registruotis"
+  },
+
+  "login": {
+    "username": "Slapyvardis",
+    "password": "Slaptažodis",
+    "submit": "Prisijungti"
+  },
+
+  "home": {
+    "apply": "Gauti pasiūlymą",
+    "create": "Sukurti produktą",
+    "all": "Peržiūrėti produktus",
+    "logout": "Atsijungti"
+  },
+
+  "income": {
+    "age": "Amžius",
+    "student": "Ar jūs studentas",
+    "yes": "Taip",
+    "no": "Ne",
+    "type": "Pajamų tipas",
+    "ZERO": "0",
+    "LOW": "1-12000",
+    "MEDIUM": "12001-40000",
+    "HIGH": "40001+",
+    "CARD": "Kortelė",
+    "ACCOUNT": "Paskira",
+    "submit": "Aplikuoti"
+  },
+
+  "table": {
+    "title": "Pavadinimas",
+    "type": "Tipas",
+    "age": "Amžius",
+    "student": "Studentas",
+    "income": "Pajamos",
+    "action": "Veiksmai",
+    "info": "Informacija",
+    "find": "Plačiau čia..",
+    "delete": "Ištrinti",
+    "edit": "Redaguoti",
+    "false": "Ne",
+    "true": "Taip"
+  },
+
+  "new": {
+    "name": "Produkto pavadinimas",
+    "type": "Produkto tipas",
+    "CARD": "Kortelė",
+    "ACCOUNT": "Paskira",
+    "validFrom": "Amžius (≥)",
+    "student": "Privalo būti studentas",
+    "submit": "Išsaugoti"
+  },
+
+  "error": {
+    "register": "Registracija nesėkminga",
+    "login": "Prisijungimas nesėkmingas",
+    "new": "Nepavyko sukurti",
+    "product": "Nepavyko apdoroti formos",
+    "delete": "Nepavyko ištrinti",
+    "update": "Nepavyko atnaujinti"
+  },
+
+  "validators": {
+    "minlength": "Minimalus ženklų skaičius 4!",
+    "passNumber": "At least of one numbers (0-9)!",
+    "passMatch": "Passwords does not match!"
+  },
+
+  "buttons": {
+    "back": "Atgal",
+  }
+}

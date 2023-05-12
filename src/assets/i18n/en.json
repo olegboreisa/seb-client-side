@@ -1,0 +1,85 @@
+{
+  "auth": {
+    "login": "Login",
+    "register": "Register"
+  },
+
+  "register": {
+    "username": "Username",
+    "password": "Password",
+    "repeatPassword": "Repeat Password",
+    "submit": "Register"
+  },
+
+  "login": {
+    "username": "Username",
+    "password": "Password",
+    "submit": "Login"
+  },
+
+  "home": {
+    "apply": "Apply for product",
+    "create": "Create product",
+    "all": "View products",
+    "logout": "Logout"
+  },
+
+  "income": {
+    "age": "Age",
+    "student": "Are you a student",
+    "yes": "Yes",
+    "no": "No",
+    "type": "Income type",
+    "ZERO": "0",
+    "LOW": "1-12000",
+    "MEDIUM": "12001-40000",
+    "HIGH": "40001+",
+    "CARD": "Card",
+    "ACCOUNT": "Account",
+    "submit": "Submit"
+  },
+
+  "table": {
+    "title": "Title",
+    "type": "Type",
+    "age": "Age",
+    "student": "Student",
+    "income": "Income",
+    "action": "Actions",
+    "info": "Info",
+    "find": "More details..",
+    "delete": "Delete",
+    "edit": "Edit",
+    "false": "No",
+    "true": "Yes"
+  },
+
+  "new": {
+    "name": "Product name",
+    "type": "Product type",
+    "CARD": "Card",
+    "ACCOUNT": "Account",
+    "validFrom": "Valid from age",
+    "student": "Must be a student",
+    "submit": "Save"
+  },
+
+  "error": {
+    "register": "Unsuccessful registration",
+    "login": "Unsuccessful login",
+    "new": "Unsuccessful creation",
+    "product": "Could not process form",
+    "delete": "Unable to delete",
+    "update": "Unable to update"
+  },
+
+  "validators": {
+    "minlength": "Minimal length of 4 chars!",
+    "passNumber": "At least of one numbers (0-9)!",
+    "passMatch": "Passwords does not match!"
+  },
+
+  "buttons": {
+    "back": "Back"
+  }
+}

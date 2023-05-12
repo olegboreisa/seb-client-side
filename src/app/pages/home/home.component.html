@@ -1,0 +1,25 @@
+<div class="cont">
+  <div class="wrap">
+    <div class="top">
+      <div class="div-border">
+        {{user?.username}}
+      </div>
+    </div>
+    <div class="bottom">
+      <div (click)="openForm()">
+        <span class="div-border btn">{{'home.apply' | translate}}</span>
+      </div>
+      <ng-container *ngIf="user?.role == 'ADMIN'">
+        <div (click)="newProduct()">
+          <span class="div-border btn">{{'home.create' | translate}}</span>
+        </div>
+        <div (click)="getProductList()">
+          <span class="div-border btn">{{'home.all' | translate}}</span>
+        </div>
+      </ng-container>
+      <div (click)="logout()">
+        <span class="div-border btn">{{'home.logout' | translate}}</span>
+      </div>
+    </div>
+  </div>
+</div>

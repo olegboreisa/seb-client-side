@@ -1,0 +1,18 @@
+<div class="cont">
+  <div class="wrap">
+    <div (click)="login()">
+      <span class="form-btn">{{'auth.login' | translate}}</span>
+    </div>
+    <div (click)="register()">
+      <span class="form-btn">{{'auth.register' | translate}}</span>
+    </div>
+    <div *ngIf="currentLang == 'en'"
+         (click)="changeLang('lt')">
+      <span class="form-btn">LT</span>
+    </div>
+    <div *ngIf="currentLang == 'lt'"
+         (click)="changeLang('en')">
+      <span class="form-btn">EN</span>
+    </div>
+  </div>
+</div>

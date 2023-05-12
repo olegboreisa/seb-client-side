@@ -1,0 +1,23 @@
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.message {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

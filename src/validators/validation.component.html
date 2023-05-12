@@ -1,0 +1,6 @@
+<div *ngIf="control && control.value.length > 0 && control.invalid && (control.dirty || control.touched)"
+  id="cont">
+  <div *ngFor="let error of errors">
+    {{'validators.' + error | translate}}
+  </div>
+</div>

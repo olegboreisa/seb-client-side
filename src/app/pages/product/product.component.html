@@ -1,0 +1,32 @@
+<div class="cont">
+  <div class="wrap">
+    <table class="product-table">
+      <thead>
+      <tr>
+        <th>{{'table.title' | translate}}</th>
+        <th>{{'table.type' | translate}}</th>
+        <th>{{'table.info' | translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{product.name}}</td>
+        <td>{{product.type}}</td>
+        <td>{{'table.find' | translate}}</td>
+      </tr>
+      </tbody>
+    </table>
+    <div *ngIf="products.length > 4"
+         id="paginate">
+      <pagination-controls (pageChange)="defaultPage = $event">
+
+      </pagination-controls>
+    </div>
+    <button style="width: 100%; margin-top: 1rem"
+            type="button"
+            class="btn btn-secondary"
+            (click)="back()">
+      {{'buttons.back' | translate}}
+    </button>
+  </div>
+</div>

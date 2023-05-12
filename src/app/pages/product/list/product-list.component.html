@@ -1,0 +1,50 @@
+<div class="cont">
+  <div class="wrap">
+    <table class="product-table">
+      <thead>
+      <tr>
+        <th>{{'table.title' | translate}}</th>
+        <th>{{'table.type' | translate}}</th>
+        <th>{{'table.age' | translate}} (≥)</th>
+        <th>{{'table.student' | translate}}</th>
+        <th>{{'table.income' | translate}} (€)</th>
+        <th>{{'table.action' | translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr  *ngFor="let product of products | paginate: { itemsPerPage: 5, currentPage: defaultPage }">
+        <td>{{product.name}}</td>
+        <td>{{'income.' + product.product | translate}}</td>
+        <td>{{product.validFrom}}</td>
+        <td>{{'table.' + product.student | translate}}</td>
+        <td>{{'income.' + product.income | translate}}</td>
+        <td>
+          <ng-container *ngIf="product.id != -1"
+                        style="cursor: pointer;">
+              <span style="color: green; margin-right: 0.3rem"
+                    (click)="edit(product.id)">
+            <i class="bi bi-pencil-square"></i>
+          </span>
+            <span style="color: red"
+                  (click)="delete(product.id)">
+            <i class="bi bi-trash"></i>
+          </span>
+          </ng-container>
+
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <div *ngIf="products.length > 4"
+         id="paginate">
+      <pagination-controls (pageChange)="defaultPage = $event">
+      </pagination-controls>
+    </div>
+    <button style="width: 100%; margin-top: 1rem"
+            type="button"
+            class="btn btn-secondary"
+            (click)="back()">
+      {{'buttons.back' | translate}}
+    </button>
+  </div>
+</div>
