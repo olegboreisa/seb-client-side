@@ -2,7 +2,8 @@
 
 _Before running the code, make sure you have the following:_
 
-* Java Runtime Environment
+* JDK 
+* Maven
 * H2 database
 * Angular CLI
 * Node.js
@@ -12,13 +13,18 @@ _Before running the code, make sure you have the following:_
 _Follow the steps below to set up and run the project:_
 
 1. **Download Server Side Zip File**. https://github.com/olegboreisa/seb-server-app
-2. **Make sure you have JRE (Java Runtime Environment Corretto Version 11.0.16) installed**.
-3. **Open the terminal and navigate to the project's directory**.
-4. **Run the file using the following command:**
+2. **Make sure you have JDK (Java Development Kit Corretto Version 11.0.16) installed**.
+3. **Make sure Maven installed**.
+4. **Open the terminal and navigate to the project's directory**.
+5. **Run the following command:**
 
-   java -jar your-application.jar
+      mvn clean package
 
-5. **Make sure you have H2 (H2 database) installed.**
+6. **Run the file using the following command:**
+
+   java -jar application.jar
+
+7. **Make sure you have H2 (H2 database) installed.**
 
    Start the H2 database server.
 
