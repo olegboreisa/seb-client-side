@@ -19,7 +19,7 @@ export const ProductFormGroup = new FormGroup({
       Validators.required]
   )),
   product: new FormControl('', Validators.required),
-  validFrom: new FormControl('', Validators.required),
+  validFrom: new FormControl(0, Validators.required),
   student: new FormControl('', Validators.required),
   income: new FormControl('', Validators.required)
 });

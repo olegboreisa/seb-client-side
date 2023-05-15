@@ -10,8 +10,6 @@
     cursor: pointer;
 
     background: linen;
-
-    border: solid 3px #6e7491;
     box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
 
     th, td {
@@ -29,6 +27,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    margin-top: 1rem;
   }
 }

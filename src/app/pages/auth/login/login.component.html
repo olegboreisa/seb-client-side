@@ -28,11 +28,13 @@
                 [disabled]="!form.valid">
           {{'login.submit' | translate}}
         </button>
-        <button type="button"
-                class="btn btn-secondary"
-                (click)="back()">
-          {{'buttons.back' | translate}}
-        </button>
+      </div>
+
+      <div id="register">
+          {{'login.register-start' | translate}}
+        <span routerLink="/register" id="reg">
+          {{'login.register-end' | translate}}
+        </span>
       </div>
     </div>
   </div>

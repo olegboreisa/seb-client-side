@@ -1,4 +1,32 @@
-<router-outlet></router-outlet>
+<ng-container>
+  <div class="lang">
+    <div id="lang">
+      <div>{{'nav.lang' | translate}}</div>
+      <div *ngIf="currentLang == 'en'"
+           (click)="changeLang('lt')">
+        <span class="lang-btn">{{'nav.lt' | translate}}</span>
+      </div>
+      <div *ngIf="currentLang == 'lt'"
+           (click)="changeLang('en')">
+        <span class="lang-btn">{{'nav.en' | translate}}</span>
+      </div>
+    </div>
+  </div>
 
-<app-notification>
-</app-notification>
+  <header>
+    <app-nav> </app-nav>
+  </header>
+
+  <main>
+    <router-outlet></router-outlet>
+
+    <app-notification>
+    </app-notification>
+  </main>
+
+  <footer>
+    <app-footer></app-footer>
+  </footer>
+</ng-container>
+
+

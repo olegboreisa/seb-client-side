@@ -21,7 +21,6 @@ export class JwtService {
 
   public isExpired(): boolean {
     const token = this.getDecodedToken();
-
     if (token) {
       const expiry = token.exp as number;
       return (Math.floor((new Date).getTime() / 1000)) >= expiry;

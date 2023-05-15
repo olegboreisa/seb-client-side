@@ -6,7 +6,7 @@ import {IncomeType} from "./model/income.type";
 @Component({
   selector: 'app-income-form',
   templateUrl: './income-form.component.html',
-  styleUrls: ['./income-form.component.scss']
+  styleUrls: ['../../../shared/form.scss']
 })
 export class IncomeFormComponent implements OnInit, OnDestroy {
 
@@ -18,7 +18,7 @@ export class IncomeFormComponent implements OnInit, OnDestroy {
 
     this.form = this.formBuilder.group(
       {
-        age: ['', Validators.required],
+        age: [0, Validators.required],
         student: ['', Validators.required],
         income: ['', Validators.required]
       });
@@ -29,10 +29,6 @@ export class IncomeFormComponent implements OnInit, OnDestroy {
   public getOffer(): void {
     localStorage.setItem('form', JSON.stringify(this.form.value));
     this.router.navigate(['/product']).then();
-  }
-
-  public back(): void {
-    this.router.navigate(['/home']).then();
   }
 
   public ngOnDestroy() { }

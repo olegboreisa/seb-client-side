@@ -11,7 +11,7 @@ import {ProductFormGroup} from "./model/product.form";
 @Component({
   selector: 'app-product-form',
   templateUrl: './product-form.component.html',
-  styleUrls: ['./product-form.component.scss']
+  styleUrls: ['../../../../shared/form.scss']
 })
 export class ProductFormComponent implements OnInit, OnDestroy  {
 
@@ -35,10 +35,6 @@ export class ProductFormComponent implements OnInit, OnDestroy  {
       }, () => {
         this.notificationService.showError('new');
       });
-  }
-
-  public back(): void {
-    this.router.navigate(['/home']).then();
   }
 
   public ngOnDestroy() {

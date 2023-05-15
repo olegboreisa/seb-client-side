@@ -12,7 +12,7 @@
       </tr>
       </thead>
       <tbody>
-      <tr  *ngFor="let product of products | paginate: { itemsPerPage: 5, currentPage: defaultPage }">
+      <tr  *ngFor="let product of products | paginate: { itemsPerPage: 3, currentPage: defaultPage }">
         <td>{{product.name}}</td>
         <td>{{'income.' + product.product | translate}}</td>
         <td>{{product.validFrom}}</td>

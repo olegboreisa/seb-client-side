@@ -4,7 +4,6 @@ import {Router} from "@angular/router";
 import {AuthService} from "../auth.service";
 import {Subscription} from "rxjs";
 import {invalidPassMatch, invalidPassNumber} from "../../../../validators/validators";
-import {ValidationComponent} from "../../../../validators/validation.component";
 import {NotificationService} from "../../../../components/notification/notification.service";
 import {RegistrationForm} from "./model/registration.form";
 
@@ -39,10 +38,6 @@ export class RegisterComponent implements OnInit, OnDestroy {
       }, () => {
         this.notificationService.showError('register');
       });
-  }
-
-  public back(): void {
-    this.router.navigate(['..']).then();
   }
 
   public ngOnDestroy(): void {

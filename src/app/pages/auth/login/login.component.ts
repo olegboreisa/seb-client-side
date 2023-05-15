@@ -6,6 +6,8 @@ import {CookieService} from "ngx-cookie-service";
 import {Subscription} from "rxjs";
 import {NotificationService} from "../../../../components/notification/notification.service";
 import {invalidPassNumber} from "../../../../validators/validators";
+import {JwtService} from "../../../../auth/jwt.service";
+import {UserData} from "./model/user.data";
 
 @Component({
   selector: 'app-login',
@@ -21,7 +23,8 @@ export class LoginComponent implements OnInit, OnDestroy {
               private authService: AuthService,
               private notificationService: NotificationService,
               private router: Router,
-              private cookieService: CookieService) {
+              private cookieService: CookieService,
+              private jwtService: JwtService) {
 
     this.form = this.formBuilder.group({
       username: ['', Validators.compose([Validators.required, Validators.minLength(4)])],
@@ -36,7 +39,10 @@ export class LoginComponent implements OnInit, OnDestroy {
       .subscribe((token) => {
         if (token) {
           this.setToken(token);
-          this.router.navigate(['/home']).then();
+          this.router.navigate(['/home']).then(() => {
+            const user = this.jwtService.getUsernameAndRole() as UserData
+            this.authService.triggerUser(user);
+          });
         } else {
           this.notificationService.showError('login')
         }
@@ -47,10 +53,6 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   private setToken(token: string): void {
     this.cookieService.set('accessToken', token);
-  }
-
-  public back(): void {
-    this.router.navigate(['/auth']).then();
   }
 
   public ngOnDestroy(): void {

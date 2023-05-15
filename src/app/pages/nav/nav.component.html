@@ -1,0 +1,32 @@
+<div class="cont">
+  <div class="wrap">
+    <div class="seb-img">
+      <img routerLink="/home" src="/assets/img/logo.png"  alt=""/>
+    </div>
+    <div class="user">
+      {{user?.username}}
+    </div>
+    <div class="empty">
+    </div>
+    <div class="links">
+      <div routerLink="/about">{{'nav.about' | translate}}</div>
+      <div routerLink="/contacts">{{'nav.contacts' | translate}}</div>
+      <div *ngIf="user" (click)="showMenu()">{{'nav.services' | translate}}</div>
+      <div *ngIf="!isLoggedIn" routerLink="/login">{{'nav.sign' | translate}}</div>
+      <div *ngIf="isLoggedIn" (click)="logout()">{{'nav.logout' | translate}}</div>
+    </div>
+  </div>
+</div>
+<div (mouseleave)="closeMenu()" class="menu-cont" *ngIf="menuOpened">
+  <div class="menu-wrap">
+    <ng-container *ngFor="let it of menu">
+      <div *ngIf="user?.role == it.role">
+        <span (click)="toService(it.route)">
+          {{'menu.' + it.name | translate}}
+        </span>
+      </div>
+    </ng-container>
+  </div>
+
+</div>
+

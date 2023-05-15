@@ -1,7 +1,18 @@
 {
-  "auth": {
-    "login": "Login",
-    "register": "Register"
+  "nav": {
+    "lang": "Change language:",
+    "lt": "Lithuanian",
+    "about": "About",
+    "services": "Services",
+    "contacts": "Contacts",
+    "sign": "Sign In",
+    "logout": "Logout"
+  },
+
+  "menu": {
+    "apply": "Apply for product",
+    "create": "Create product",
+    "review": "View products"
   },
 
   "register": {
@@ -14,14 +25,24 @@
   "login": {
     "username": "Username",
     "password": "Password",
-    "submit": "Login"
+    "submit": "Login",
+    "register-start": "Register",
+    "register-end": "here"
   },
 
   "home": {
-    "apply": "Apply for product",
-    "create": "Create product",
-    "all": "View products",
-    "logout": "Logout"
+    "title": "For your softer financial pillow",
+    "text": "We will help you to build up your financial buffer easier – interest rate on 1-year fixed-term deposits were raised to 3.5%."
+  },
+
+  "about": {
+    "purpose": "Our purpose",
+    "text": "We exist to positively shape the future with responsible advice and capital. Today and for generations to come."
+  },
+
+  "contacts": {
+    "title": "Write or call us",
+    "text": "+370 5 268 2800 for private customers (I–V 8.00–20.00)"
   },
 
   "income": {

@@ -8,12 +8,12 @@
 
   .wrap {
     min-width: 500px;
-    background: linen;
 
     form {
+      padding: 20px 0 20px 0;
 
       div {
-        margin: 1rem 0 1rem 0;
+        margin-bottom: 0.5rem;
       }
 
       .field-title {
@@ -25,20 +25,14 @@
         display: flex;
         justify-content: space-around;
       }
-
-      padding: 40px 60px;
-
-      border: solid 3px #6e7491;
-      box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
     }
 
     .buttons {
       display: flex;
       justify-content: space-around;
       column-gap: 5rem;
-      margin-top: 3rem;
+      margin-top: 1rem;
     }
 
   }
 }
-

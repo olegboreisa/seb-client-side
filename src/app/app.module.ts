@@ -14,9 +14,8 @@ import {RegisterComponent} from "./pages/auth/register/register.component";
 import {LoginComponent} from "./pages/auth/login/login.component";
 import {AuthService} from "./pages/auth/auth.service";
 import {ProductService} from "./pages/product/product.service";
-import { AuthComponent } from './pages/auth/auth.component';
 import {AuthInterceptor} from "../auth/auth-interceptor";
-import {TranslateModule, TranslateService} from "@ngx-translate/core";
+import {TranslateService} from "@ngx-translate/core";
 import {AppTranslateModule} from "../modules/app-translate.module";
 import {ValidationComponent} from "../validators/validation.component";
 import {NotificationComponent} from "../components/notification/notification.component";
@@ -24,6 +23,11 @@ import {NotificationService} from "../components/notification/notification.servi
 import { ProductListComponent } from './pages/product/list/product-list.component';
 import {NgxPaginationModule} from "ngx-pagination";
 import { ProductEditComponent } from './pages/product/edit/product-edit.component';
+import { NavComponent } from './pages/nav/nav.component';
+import { FooterComponent } from './pages/footer/footer.component';
+import { AboutComponent } from './pages/about/about.component';
+import {BasicComponent} from "../components/basic/basic.component";
+import { ContactsComponent } from './pages/contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -34,11 +38,15 @@ import { ProductEditComponent } from './pages/product/edit/product-edit.componen
     ProductFormComponent,
     RegisterComponent,
     LoginComponent,
-    AuthComponent,
     ValidationComponent,
     NotificationComponent,
     ProductListComponent,
-    ProductEditComponent
+    ProductEditComponent,
+    NavComponent,
+    FooterComponent,
+    AboutComponent,
+    BasicComponent,
+    ContactsComponent
   ],
     imports: [
         BrowserModule,

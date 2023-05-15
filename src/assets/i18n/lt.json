@@ -1,7 +1,18 @@
 {
-  "auth": {
-    "login": "Prisijungti",
-    "register": "Registruotis"
+  "nav": {
+    "lang": "Keisti kalbą:",
+    "en": "English",
+    "about": "Apie",
+    "services": "Paslaugos",
+    "contacts": "Kontaktai",
+    "sign": "Prisijungti",
+    "logout": "Atsijungti"
+  },
+
+  "menu": {
+    "apply": "Gauti pasiūlymą",
+    "create": "Sukurti produktą",
+    "review": "Peržiūrėti produktus"
   },
 
   "register": {
@@ -14,14 +25,24 @@
   "login": {
     "username": "Slapyvardis",
     "password": "Slaptažodis",
-    "submit": "Prisijungti"
+    "submit": "Prisijungti",
+    "register-start": "Registruotis",
+    "register-end": "čia"
   },
 
   "home": {
-    "apply": "Gauti pasiūlymą",
-    "create": "Sukurti produktą",
-    "all": "Peržiūrėti produktus",
-    "logout": "Atsijungti"
+    "title": "Minkštesnei finansinei\npagalvei",
+    "text": "Padėsime Jums lengviau sukaupti finansinį rezervą –\n1 metų terminuotojo indėlio palūkanas padidinome iki 3,5 %."
+  },
+
+  "about": {
+    "purpose": "Mūsų veiklos prasmė",
+    "text": "Esame tam, kad atsakingais patarimais ir kapitalu kurtume geresnę ateitį. Šiai ir būsimoms kartoms."
+  },
+
+  "contacts": {
+    "title": "Parašykite arba paskambinkite mums",
+    "text": "+370 5 268 2800 privatiems (I–V 8.00–20.00)"
   },
 
   "income": {
@@ -80,6 +101,6 @@
   },
 
   "buttons": {
-    "back": "Atgal",
+    "back": "Atgal"
   }
 }

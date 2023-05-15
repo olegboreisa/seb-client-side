@@ -1,0 +1,76 @@
+.cont {
+  border-bottom: 1px solid #000000;
+
+  .wrap {
+    width: 100%;
+    display: flex;
+
+    img {
+      height: 76px;
+      width: 76px;
+
+      cursor: pointer;
+    }
+
+    .seb-img {
+      width: 15%;
+    }
+
+    .user {
+      width: 10%;
+    }
+
+    .empty {
+      width: 35%;
+    }
+
+    .links {
+      width: 40%;
+      justify-content: space-around;
+
+      div {
+        cursor: pointer;
+      }
+
+      div:hover {
+        font-weight: 700;
+      }
+    }
+
+    .links, .user {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.menu-cont {
+  width: 100%;
+  position: absolute;
+
+  .menu-wrap {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+
+    padding: 10px;
+    background: #efeeee99;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+
+    position: absolute;
+    top: 0;
+    right: 4rem;
+
+    div {
+      cursor: pointer;
+    }
+
+    div:hover {
+      font-weight: 700;
+    }
+  }
+}

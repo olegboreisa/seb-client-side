@@ -4,14 +4,15 @@ import {NotificationService} from "../../../../components/notification/notificat
 import {ProductService} from "../product.service";
 import {Subscription} from "rxjs";
 import {ProductForm, ProductFormGroup} from "../create/model/product.form";
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {FormBuilder, FormGroup} from "@angular/forms";
 import {IncomeType} from "../../income/model/income.type";
 import {ProductType} from "../create/model/product.type";
 
 @Component({
   selector: 'app-product-edit',
   templateUrl: './product-edit.component.html',
-  styleUrls: ['../create/product-form.component.scss']
+  styleUrls: ['../../../../shared/form.scss']
+
 })
 export class ProductEditComponent implements OnInit, OnDestroy {
 

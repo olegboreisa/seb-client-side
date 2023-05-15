@@ -1,5 +1,4 @@
-import {Component, OnInit} from '@angular/core';
-import {CookieService} from "ngx-cookie-service";
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
 
 @Component({
@@ -7,12 +6,22 @@ import {TranslateService} from "@ngx-translate/core";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
+
+  public currentLang: string;
 
   constructor(private translateService: TranslateService) {
-    this.translateService.use(localStorage.getItem('lang') || 'en');
+    this.currentLang = localStorage.getItem('lang') || 'en';
+    this.translateService.use(this.currentLang);
   }
 
-  public ngOnInit() {
+  public ngOnInit() { }
+
+  public changeLang(selectedLang: string): void {
+    localStorage.setItem('lang', selectedLang)
+    this.currentLang = selectedLang;
+    this.translateService.use(selectedLang);
   }
+
+  public ngOnDestroy(): void { }
 }
